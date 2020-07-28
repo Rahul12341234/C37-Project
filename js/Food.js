@@ -2,6 +2,11 @@ class Food {
     constructor(){
     this.foodStock=0;
     this.image=loadImage('images/Milk.png');
+    this.lastFed;
+    }
+
+    currentTime(){
+      this.lastFed = lastFed;
     }
 
    updateFoodStock(foodStock){
@@ -34,5 +39,20 @@ class Food {
           x=x+30;
         }
       }
+    }
+
+    bedroom(){
+      imageMode(CENTER);
+      image(bedroom, 550, 500, 1100, 1000)
+    }
+
+    garden(){
+      imageMode(CENTER);
+      image(garden, 550, 500, 1100, 1000)
+    }
+
+    washroom(){
+      imageMode(CENTER);
+      image(washroom, 550, 500, 1100, 1000)
     }
 }
